@@ -1,0 +1,21 @@
+---
+- name: Install Docker on Amazon Linux 2023
+  hosts: webservers
+  become: yes
+  tasks:
+    - name: Docker package install karein
+      dnf:
+        name: docker
+        state: latest
+
+    - name: Docker service start karein
+      service:
+        name: docker
+        state: started
+        enabled: yes
+
+    - name: ec2-user ko docker group mein add karein
+      user:
+        name: ec2-user
+        groups: docker
+        append: yes
