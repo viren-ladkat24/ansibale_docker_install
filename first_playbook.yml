@@ -1,0 +1,10 @@
+---
+- name: create test file on manage node 
+  hosts: webservers
+  become: yes
+  tasks:
+    - name: Create a file in /tmp
+      file:
+        path: /tmp/ansible_test.txt
+        state: touch
+        mode: '0644'
