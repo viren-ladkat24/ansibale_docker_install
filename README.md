@@ -156,9 +156,14 @@ ansible appservers -a "docker --version"
 * Multi-node Deployment
 * Service Management
 * Container Setup with Docker
-<img width="1920" height="821" alt="Screenshot (23)" src="https://github.com/user-attachments/assets/0055b771-f67b-425a-9b7d-95fc776f3a66" />
+
 
 --
+##Screenshots
+<img width="1920" height="821" alt="Screenshot (23)" src="https://github.com/user-attachments/assets/661c9aaf-2ba4-4116-afe6-f278477ad3a9" />
+<img width="1920" height="888" alt="image" src="https://github.com/user-attachments/assets/0754dad6-0467-401f-b8ea-6b47642c57c7" />
+<img width="1920" height="926" alt="image" src="https://github.com/user-attachments/assets/85f09e96-90a4-48ae-9191-c8c6c354248e" />
+
 
 ---
 
