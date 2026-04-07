@@ -3,18 +3,18 @@
   hosts: webservers
   become: yes
   tasks:
-    - name: Docker package install karein
+    - name: Install Docker package  
       dnf:
         name: docker
         state: latest
 
-    - name: Docker service start karein
+    - name: Start Docker service  
       service:
         name: docker
         state: started
         enabled: yes
 
-    - name: ec2-user ko docker group mein add karein
+    - name: ec2-user ko docker group 
       user:
         name: ec2-user
         groups: docker
